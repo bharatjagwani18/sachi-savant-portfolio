@@ -159,7 +159,7 @@ body.is-loaded { opacity: 1; }
 .hero__art {
   position: absolute;
   top: 0;
-  right: -6%;
+  right: -16%;
   height: 115%;
   width: min(72vw, 68rem);
   object-fit: cover;
