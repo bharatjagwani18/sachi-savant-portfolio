@@ -518,6 +518,37 @@ body.is-loaded { opacity: 1; }
   color: var(--ink-2);
 }
 
+.award-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1.6rem;
+  padding: 0.55rem 1.1rem 0.55rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.award-badge__icon {
+  flex: none;
+  color: var(--bronze);
+}
+
+.award-badge__status {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  white-space: nowrap;
+}
+
+.award-badge__title {
+  font-size: 0.82rem;
+  color: var(--ink-2);
+  padding-left: 0.7rem;
+  border-left: 1px solid var(--line);
+}
+
 .p-hero {
   padding: 0 var(--pad);
   max-width: var(--maxw);
