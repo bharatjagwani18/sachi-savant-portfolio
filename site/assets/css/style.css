@@ -360,7 +360,7 @@ body.is-loaded { opacity: 1; }
   align-items: center;
 }
 
-.philosophy__portrait { max-width: 78%; }
+.philosophy__portrait { max-width: 78%; margin-inline: auto; }
 
 .philosophy__portrait img {
   width: 100%;
@@ -374,13 +374,15 @@ body.is-loaded { opacity: 1; }
   font-size: clamp(1.05rem, 1.6vw, 1.35rem);
   line-height: 1.55;
   color: var(--ink-2);
+  text-align: justify;
+  text-align-last: left;
 }
 
 .philosophy__quote::before {
   content: "\201C";
   display: block;
   font-family: var(--serif);
-  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-size: clamp(3.6rem, 7.2vw, 5.4rem);
   line-height: 0.5;
   color: var(--bronze);
   margin-bottom: 1rem;
@@ -390,7 +392,6 @@ body.is-loaded { opacity: 1; }
 
 .philosophy__quote-end {
   font-family: var(--serif);
-  font-size: 1.4em;
   color: var(--bronze);
   margin-left: 0.15em;
 }
