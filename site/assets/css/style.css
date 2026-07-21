@@ -357,13 +357,14 @@ body.is-loaded { opacity: 1; }
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   gap: clamp(2.5rem, 6vw, 6rem);
-  align-items: start;
+  align-items: center;
 }
+
+.philosophy__portrait { max-width: 78%; }
 
 .philosophy__portrait img {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
@@ -386,6 +387,13 @@ body.is-loaded { opacity: 1; }
 }
 
 .philosophy__quote p + p { margin-top: 1.3rem; }
+
+.philosophy__quote-end {
+  font-family: var(--serif);
+  font-size: 1.4em;
+  color: var(--bronze);
+  margin-left: 0.15em;
+}
 
 /* ——— contact / footer ——— */
 
