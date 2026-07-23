@@ -351,16 +351,16 @@ body.is-loaded { opacity: 1; }
 
 /* ——— philosophy ——— */
 
-.philosophy { background: var(--bone-2); }
+.philosophy { background: var(--bone-2); padding-block: clamp(2.5rem, 5vw, 5rem); }
 
 .philosophy__grid {
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  gap: clamp(2.5rem, 6vw, 6rem);
+  gap: clamp(2rem, 5vw, 4.5rem);
   align-items: center;
 }
 
-.philosophy__portrait { max-width: 78%; margin-inline: auto; }
+.philosophy__portrait { max-width: 58%; margin-inline: auto; }
 
 .philosophy__portrait img {
   width: 100%;
@@ -371,8 +371,8 @@ body.is-loaded { opacity: 1; }
 .philosophy__quote {
   font-family: var(--serif);
   font-weight: 330;
-  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
-  line-height: 1.55;
+  font-size: clamp(0.92rem, 1.3vw, 1.08rem);
+  line-height: 1.48;
   color: var(--ink-2);
   text-align: justify;
   text-align-last: left;
@@ -382,16 +382,19 @@ body.is-loaded { opacity: 1; }
   content: "\201C";
   display: block;
   font-family: var(--serif);
-  font-size: clamp(3.6rem, 7.2vw, 5.4rem);
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
   line-height: 0.5;
   color: var(--bronze);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
-.philosophy__quote p + p { margin-top: 1.3rem; }
+.philosophy__quote p + p { margin-top: 1rem; }
 
 .philosophy__quote-end {
   font-family: var(--serif);
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  line-height: 0;
+  vertical-align: -0.32em;
   color: var(--bronze);
   margin-left: 0.15em;
 }
