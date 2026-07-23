@@ -399,6 +399,76 @@ body.is-loaded { opacity: 1; }
   margin-left: 0.15em;
 }
 
+/* ——— experience timeline ——— */
+
+.timeline {
+  display: grid;
+  gap: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  padding-top: clamp(1.8rem, 3.5vw, 2.6rem);
+  border-top: 1px solid var(--line-soft);
+}
+
+.timeline__item:first-child { border-top: none; padding-top: 0; }
+
+.timeline__dates {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bronze);
+}
+
+.timeline__body h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  color: var(--ink);
+}
+
+.timeline__company {
+  font-weight: 340;
+  color: var(--ink-2);
+}
+
+.timeline__location {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.timeline__projects {
+  margin-top: 0.9rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.timeline__projects a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 0.2em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.timeline__projects a:hover {
+  color: var(--bronze);
+  text-decoration-color: var(--bronze-soft);
+}
+
+@media (max-width: 40rem) {
+  .timeline__item { grid-template-columns: 1fr; gap: 0.5rem; }
+}
+
 /* ——— contact / footer ——— */
 
 .contact {
